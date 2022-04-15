@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  src: 
+       url("fonts/Cuprum/Cuprum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-weight: 400;
+  src: 
+       url("fonts/Cuprum/Cuprum-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 700;
+  src: 
+       url("fonts/Cuprum/Cuprum-Bold.woff2") format("woff2");
+}
+
+/* ---------------------------------------------------- */
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/PT_Sans/PTSans-Regular.woff2') format('woff2'); /*Regular*/
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: italic;
+	font-weight: normal;
+	src: url('fonts/PT_Sans/PTSans-Italic.woff2') format('woff2'); /*Italic*/
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/PT_Sans/PTSans-Bold.woff2') format('woff2'); /*Bold*/
+}
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: italic;
+	font-weight: bold;
+	src: url('fonts/PT_Sans/PTSans-BoldItalic.woff2') format('woff2'); /*BoldItalic*/
+}

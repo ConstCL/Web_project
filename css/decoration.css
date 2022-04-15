@@ -1,0 +1,227 @@
+/* .popular-articles .item:last-child::after {
+    content: 'eee';
+} */
+
+/* .search-block label {   для замены цвета лупы через fill
+    position: absolute;
+    top: 11px;
+    left: 10px;
+} */
+
+.search-block label {
+    content: url('../img/svg/icon-search.svg');
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 11px;
+    left: 10px;
+
+    opacity: .3;
+}
+
+input[type=search]:focus + label{
+    content: url('../img/svg/icon-search-red.svg');
+    opacity: .1;
+
+}
+
+.bookmark-link::before {
+    content: url('../img/svg/icon-bookmark.svg');
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 11px;
+    left: 10px;
+    /* background-image: url('../img/svg/icon-bookmark.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;  */
+    opacity: .3;
+}
+
+.cart-link::before {
+    content: url('../img/svg/icon-cart.svg');
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 11px;
+    left: 20px;
+ 
+    opacity: .3;
+}
+
+.bookmark-link:hover::before,
+.cart-link:hover::before,
+.execute-an-order-link:hover::before {
+    opacity: 1;
+}
+
+.bookmark-link:active::before,
+.cart-link:active::before,
+.execute-an-order-link:active::before
+ {
+    opacity: .3;
+}
+
+.login-link > a svg {
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    top: 13px;
+    left: 12px; 
+}
+
+.login-link a:hover path{
+    fill: #32425c;
+    opacity: 1;
+
+}
+
+.catalog .new::after,
+.popular-articles .new::after {
+    position: absolute;
+    content: url('../img/new.png');
+    width: 60px;
+    height: 63px;
+    top: 0;
+    right: 0;
+}
+
+.consumer-actions {
+    display: none;
+}
+
+.popular-articles .item:hover img {
+    display: none;
+}
+
+.popular-articles .item:hover .consumer-actions {
+    display: block;
+}
+
+.all-services-list::before {
+    content: url('../img/menu-shadow.png');
+    position: absolute;
+    width: 10px;
+    height: 272px;
+    bottom: -47px;
+    right: 0px;
+    
+}
+
+.vk, .fb, .insta {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    background-color:#212a3a;
+    clip-path: circle(20px);
+}
+
+.vk:hover {
+  background-color: #0077FF;
+}
+
+.fb:hover {
+    background-color: #1877F2;
+}
+
+.insta:hover {
+    background: linear-gradient(45deg,  #F6C666, #405de6, #5851db, 
+                                #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.vk svg {
+    position: absolute;
+    left: 8px;
+    top: 13px;
+}
+
+.fb svg {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+
+.insta svg {
+    position: absolute;
+    left: 11px;
+    top: 10px;
+}
+
+.vk:hover path {
+    fill: #fff;
+}
+
+.fb:hover path {
+    fill: #fff;
+}
+
+.insta:hover path {
+    fill: #fff;
+}
+
+
+/* >>>Close-button - BEGIN */
+.close-button {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+}
+
+.close-button::before,
+.close-button::after {
+    position: absolute;
+    content: " ";
+    width: 25px;
+    height: 4px;
+    top: 13px;
+    left: 2px;
+    background-color: #ee3643;
+    border-radius: 3px;
+
+}
+
+.close-button::before {
+    transform: rotate(-45deg);
+}
+
+.close-button::after {
+    transform: rotate(45deg);
+}
+
+.close-button:active:before,
+.close-button:active:after {
+    background-color: #88161e;
+}
+/* >>>Close-button - END */
+
+/* modal popup animations - BEGIN */
+@keyframes falling-out {
+    0% { transform: translateY(-2000px); }
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.modal-window {
+    animation-name: falling-out;
+    animation-duration: 1s;
+}
+
+@keyframes shaking {
+    0%, 100% { transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+    20%, 40%, 60%, 80% { transform: translateX(10px);}
+}
+.modal-window_shake {
+    -webkit-animation: shaking 0.4s;
+          animation: shaking 0.4s;
+}
+
+
+/* modal popup animations - END */
+
+
